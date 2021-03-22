@@ -69,3 +69,24 @@ a.box,a:hover {
 	font-family: arial;
 	color: black;
 }
+
+li.btn {
+	width: 125px;
+	line-height: 22px;
+	margin-bottom: 4px;
+	text-align: center;
+}
+
+li.btn a {
+	display: block;
+	width: 125px;
+	color: red;
+	font-family: arial;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 25px ;
+}
+
+li.btn a:hover {
+	color: rgb(255, 255, 255);	
+}
