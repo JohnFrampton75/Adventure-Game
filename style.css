@@ -25,11 +25,69 @@ nav {
 	background-position: center;
 }
 
+.banner-area1 {
+	padding: 280px 620px;
+	margin: auto;
+	background-image: url(images/howtoplay.jpg);
+	background-size: contain;
+	background-position: center;
+}
+
 .contents-area {
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.contents-area1 {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contents1 {
+	text-align: top;
+}
+
+.contents1 h1 {
+	font-size: 85;
+	color: rgb(211, 67, 67);
+}
+
+.contents1 p {
+	font-size: 35;
+	color: white
+}
+
+.contents {
+	text-align: center;
+}
+
+.contents h1 {
+	font-size: 85;
+	color: rgb(211, 67, 67);
+}
+
+.contents p {
+	font-size: 35;
+	color: white
+}
+
+
+.contents .btn {
+	border:none;
+	outline:none;
+	padding: 15px;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-size: 20px;
+	cursor: pointer;
+	background: rgb(140, 141, 141);
+}
+.contents .btn a {
+	color:white
 }
 
 label.logo {
@@ -72,28 +130,3 @@ a.box,a:hover {
 
 }
 
-.homepagecontent {
-	font-family: arial;
-	font-size: 18px;
-}
-
-button.btn {
-	width: 125px;
-	line-height: 22px;
-	margin-bottom: 4px;
-	text-align: center;
-}
-
-button.btn a {
-	display: block;
-	width: 125px;
-	color: red;
-	font-family: arial;
-	font-weight: bold;
-	text-decoration: underline;
-	font-size: 25px ;
-}
-
-button.btn a:hover {
-	color: rgb(255, 255, 255);	
-}
