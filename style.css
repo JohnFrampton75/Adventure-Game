@@ -9,6 +9,11 @@
 
 body {
 	font-family: arial;
+	background-color: black;
+	margin: auto;
+	background-image: url(images/background2.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 nav {
@@ -188,7 +193,7 @@ nav ul li a:hover {
 .container .box {
 	width: 100%;
 	padding: 50px;
-	background: rgb(218, 218, 218);
+	background: rgb(212, 212, 212);
 	margin-top: 50px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px -3px  rgba(0, 0, 0, 0.1);
