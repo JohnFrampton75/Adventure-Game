@@ -33,6 +33,14 @@ nav {
 	background-position: center;
 }
 
+.banner-area2 {
+	padding: 280px 620px;
+	margin: auto;
+	background-image: url(images/information.jpg);
+	background-size: contain;
+	background-position: center;
+}
+
 .contents-area {
 	height: 100%;
 	display: flex;
@@ -45,6 +53,28 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.contents-area2 {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.contents {
+	text-align: center;
+}
+
+.contents h1 {
+	font-size: 85;
+	color: rgb(211, 67, 67);
+}
+
+.contents p {
+	font-size: 35;
+	color: white
 }
 
 .contents1 {
@@ -61,20 +91,20 @@ nav {
 	color: white
 }
 
-.contents {
+.contents2 {
+
 	text-align: center;
 }
 
-.contents h1 {
+.contents2 h1 {
 	font-size: 85;
-	color: rgb(211, 67, 67);
+	color: rgb(211, 73, 73);
 }
 
-.contents p {
+.contents2 p {
 	font-size: 35;
 	color: white
 }
-
 
 .contents .btn {
 	border:none;
@@ -129,3 +159,17 @@ a.box,a:hover {
 	transition: .4s;
 }
 
+.container {
+	width: 70%;
+	margin: 50px auto;
+	padding: 10px;
+}
+
+.container .box {
+	width: 100%;
+	padding: 50px;
+	background: #fff;
+	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px -3px  rgba(0, 0, 0, .1 );
+}
