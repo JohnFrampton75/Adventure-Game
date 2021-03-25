@@ -120,6 +120,26 @@ nav {
 	color:white
 }
 
+.btn {
+	border:none;
+	outline:none;
+	padding: 8px 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	background: rgb(140, 141, 141);
+}
+.btn a {
+	color:white
+}
+
+.btn a:hover {
+	background: rgb(109, 109, 109);
+	transition: .4s;
+	padding: 4px;
+}
+
 label.logo {
 	color: white;
 	font-size: 35px;
@@ -154,7 +174,7 @@ nav ul li a:hover {
 	color: rgb(134, 134, 134);	
 }
 
-a.box,a:hover {
+ a.box,a:hover {
 	background: rgb(124, 22, 22);
 	transition: .4s;
 }
@@ -168,8 +188,9 @@ a.box,a:hover {
 .container .box {
 	width: 100%;
 	padding: 50px;
-	background: #fff;
+	background: rgb(218, 218, 218);
 	margin-top: 50px;
 	border-radius: 10px;
-	box-shadow: 0 0 10px -3px  rgba(0, 0, 0, .1 );
+	box-shadow: 0 0 10px -3px  rgba(0, 0, 0, 0.1);
 }
+
