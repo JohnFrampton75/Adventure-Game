@@ -5,6 +5,7 @@
 		<title>AdventureGame</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<style type="text/css"></style>
 	</head>
 	<body>
 		<nav>
@@ -16,37 +17,69 @@
 			</ul>
 		</nav>
 	</body>
+	<div id="clock"></div>
+    <script type="text/javascript">
+        setInterval(displayclock, 500);
+        function displayclock () 
+		{
+            var time = new Date();
+            var hrs = time.getDate();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
+
+            if (hrs > 12) {
+                hrs = hrs - 12;
+            }
+
+            if (hrs == 0) {
+                hrs = 12;
+            }
+			if (hrs < 10) {
+                hrs = '0' + hrs;
+            }
+			if (min < 10) {
+                min = '0' + min;
+            }
+			if (sec < 10) {
+                sec = '0' + sec;
+            }
+
+
+            document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec;
+		}
+
+    </script>
 	<div class="banner-area3">
 		<div class="container">
 			<div class="box1">
 				<p> 
-					intro 
+					The clues are adding up, we now know he killed and there was blood. There was definetly a sign of forced entry because the back door has scratch marks and the handle was broken. Lets see how the charaters would enter the house if they were to break in...
 				</p>
 			</div>
 			<div class="box">
 				<p> 
-					page 8 Favorite choice of weapon SPLIT hhfhfhhff
+					The old fansioned way, kick it until it breaks. You can never be to careful... just make sure you don't make to much of a mess and keep it quiet!
 				</p>
 			</div>
 				<button class="btn"><a href="page9.html">Mr Gold</a></button>
 			<div class="box">
 				<p>
-					fhfhhfhfhfhfhfhfhf
+					Always look for a window! They are easy to open and sneaking in and out is too easy!
 				</p>
 			</div>
 			<button class="btn"><a href="fail.html">Penny Fara</a></button>
 			<div class="box">
 				<p>
-					fhfhhfhfhfhfhfhfhf
+					Pretend I am a pizza delivery man and make my way in the house, if they don't recongise me at first, it works everytime.
 				</p>
 			</div>
-			<button class="btn"><a href="page9.html">Clint Jr</a></button>
+			<button class="btn"><a href="fail.html">Clint Jr</a></button>
 			<div class="box">
 				<p>
-					fhfhhfhfhfhfhfhfhf
+					I have a key, plain and simple...
 				</p>
 			</div>
-			<button class="btn"><a href="page9.html">Tough Kitty</a></button>
+			<button class="btn"><a href="fail.html">Tough Kitty</a></button>
 		</div>
 	</div>
 </html>

@@ -5,6 +5,7 @@
 		<title>AdventureGame</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<style type="text/css"></style>
 	</head>
 	<body>
 		<nav>
@@ -16,14 +17,46 @@
 			</ul>
 		</nav>
 	</body>
-	<div class="banner-area">
-		<div class="contents-area">
-			<div class="contents">
+	<div id="clock"></div>
+    <script type="text/javascript">
+        setInterval(displayclock, 500);
+        function displayclock () 
+		{
+            var time = new Date();
+            var hrs = time.getDate();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
 
-				<h1>Home Page</h1>
-				<p>Welcome to MurderMystery, an adventure game that takes you through a series of scenarios and your task is to spot the potential killer. Click the button to continue. </p>
-				<button class="btn"><a href="start.html">Play Now!</a></button>
+            if (hrs > 12) {
+                hrs = hrs - 12;
+            }
+
+            if (hrs == 0) {
+                hrs = 12;
+            }
+			if (hrs < 10) {
+                hrs = '0' + hrs;
+            }
+			if (min < 10) {
+                min = '0' + min;
+            }
+			if (sec < 10) {
+                sec = '0' + sec;
+            }
+
+
+            document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec;
+		}
+
+    </script>
+		<div class="banner-area">
+			<div class="contents-area">
+				<div class="contents">
+					<h1>Home Page</h1>
+					<p>Welcome to MurderMystery, an adventure game that takes you through a series of scenarios and your task is to spot the potential killer. Click the button to continue. </p>
+					<button class="btn"><a href="start.html">Play Now!</a></button>
+				</div>
 			</div>
 		</div>
-	</div>
+</div>
 </html>

@@ -5,6 +5,7 @@
 		<title>AdventureGame</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<style type="text/css"></style>
 	</head>
 	<body>
 		<nav>
@@ -16,34 +17,66 @@
 			</ul>
 		</nav>
 	</body>
+	<div id="clock"></div>
+    <script type="text/javascript">
+        setInterval(displayclock, 500);
+        function displayclock () 
+		{
+            var time = new Date();
+            var hrs = time.getDate();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
+
+            if (hrs > 12) {
+                hrs = hrs - 12;
+            }
+
+            if (hrs == 0) {
+                hrs = 12;
+            }
+			if (hrs < 10) {
+                hrs = '0' + hrs;
+            }
+			if (min < 10) {
+                min = '0' + min;
+            }
+			if (sec < 10) {
+                sec = '0' + sec;
+            }
+
+
+            document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec;
+		}
+
+    </script>
 	<div class="banner-area3">
 		<div class="container">
 			<div class="box1">
 				<p> 
-					We know Mr Bennett was found in a pool of blood, meaning whatever killed him must have had an impact. Maybe a gun, a knife, or some other kind of object. Regardless this point us closer into the directions of the killer.
+					We know Mr Bennett was found in a pool of blood, meaning whatever killed him must have had an impact. Maybe a gun, a knife, or some other kind of object. Regardless this point us closer into the directions of the killer, lets just see what everyones reveenge plot was for Mr Bennett?.
 				</p>
 			</div>
 			<div class="box">
 				<p> 
-					page 6 Revenge Plot SPLIT hhfhfhhff
+					Mr Gold claims he was going to steal the land from Mr Bennett by pointing a gun striaght into his face. Surely he couldnt say no to that and when the land is mine I will make millions. As for Mr Bennett lets just say he will be getting a visit from my gold pilstol!
 				</p>
 			</div>
 				<button class="btn"><a href="page7.html">Mr Gold</a></button>
 			<div class="box">
 				<p>
-					fhfhhfhfhfhfhfhfhf
+					PennyFara claims she was going to write up a fake article on Mr Bennett and spread horrible rumours that would destroy his career. Let pen and paper do the talking I suppose and expose him for what he really is .....
 				</p>
 			</div>
 			<button class="btn"><a href="page7.html">Penny Fara</a></button>
 			<div class="box">
 				<p>
-					fhfhhfhfhfhfhfhfhf
+					Clint Jr was planning on selling all his stocks knowing they would fail and Mr Bennett would loose millions, If i can't have his money then no one can! A man like Mr Bennett doesn't deserve a luxury life like that..... all i know is I do! 
 				</p>
 			</div>
 			<button class="btn"><a href="page7.html">Clint Jr</a></button>
 			<div class="box">
 				<p>
-					fhfhhfhfhfhfhfhfhf
+					Plain and simple, Tough Kitty wanted to burn his million dollar house down to the ground! He loved that house more than he did with me.....
 				</p>
 			</div>
 			<button class="btn"><a href="page7.html">Tough Kitty</a></button>

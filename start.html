@@ -15,12 +15,44 @@
 				<li><a href="information.html">Information</a></li>
 			</ul>
 		</nav>
+		<div id="clock"></div>
+		<script type="text/javascript">
+			setInterval(displayclock, 500);
+			function displayclock () 
+			{
+				var time = new Date();
+				var hrs = time.getDate();
+				var min = time.getMinutes();
+				var sec = time.getSeconds();
+	
+				if (hrs > 12) {
+					hrs = hrs - 12;
+				}
+	
+				if (hrs == 0) {
+					hrs = 12;
+				}
+				if (hrs < 10) {
+					hrs = '0' + hrs;
+				}
+				if (min < 10) {
+					min = '0' + min;
+				}
+				if (sec < 10) {
+					sec = '0' + sec;
+				}
+	
+	
+				document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec;
+			}
+	
+		</script>
         <div class="banner-area">
             <div class="contents-area">
                 <div class="contents">
     
                     <h1>Introduction</h1>
-                    <p>You are the detective, it’s your job to read each scenario carefully analysing each suspect and once your mind is made up on who stands out the most, simply just click their name to progress, lastly you will be timed to see how quick you can complete this task.</p>
+                    <p>You are the detective, it’s your job to read each scenario carefully analysing each suspect and once your mind is made up on who stands out the most, simply just click their name to progress, lastly there is a clock in the left hand corner to time how long it took you! Best of luck.</p>
                     <button class="btn"><a href="page1.html">Start Game!</a></button>
                 </div>
             </div>
