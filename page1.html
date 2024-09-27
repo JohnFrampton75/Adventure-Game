@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="uft-8">
+		<title>AdventureGame</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<style type="text/css"></style>
+	</head>
+	<body>
+		<nav>
+			<label class="logo">MysteryMurder</label>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="howtoplay.html">How to play</a></li>
+				<li><a href="information.html">Information</a></li>
+			</ul>
+		</nav>
+		<div id="clock"></div>
+		<script type="text/javascript">
+			setInterval(displayclock, 500);
+			function displayclock () 
+			{
+				var time = new Date();
+				var hrs = time.getDate();
+				var min = time.getMinutes();
+				var sec = time.getSeconds();
+	
+				if (hrs > 12) {
+					hrs = hrs - 12;
+				}
+	
+				if (hrs == 0) {
+					hrs = 12;
+				}
+				if (hrs < 10) {
+					hrs = '0' + hrs;
+				}
+				if (min < 10) {
+					min = '0' + min;
+				}
+				if (sec < 10) {
+					sec = '0' + sec;
+				}
+	
+	
+				document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec;
+			}
+	
+		</script>
+	</body>
+	<div class="banner-area3">
+		<div class="container">
+			<div class="box1">
+				<p> 
+					You are a master class detective with a reputation to go alongside it, compared to a Mr Sherlock Holmes, you never miss a clue, always seeking the next. The unlucky one that has met his match is called Mr Bennett, very little is known about Mr Bennet other than the fact he is a multi-millionaire whose job is unknown. You will find out more as you go along with the story.
+				</p>
+			</div>
+			<div class="box">
+				<p> 
+					Introducing Mr Gold, a man from Texas who runs a gold mining industry, some say he has a gold revolver that goes off when his temper has burst. He is not a man to be messed with because you never know what will happen.
+
+				</p>
+			</div>
+				<button class="btn"><a href="page2.html">Mr Gold</a></button>
+			<div class="box">
+				<p>
+					PennyFara is a sneaky reporter who will do just about anything to blow the roof of the place for a good story, located in Washington DC, she has a reputation for working unethically and who knows what she will find out next.
+				</p>
+			</div>
+			<button class="btn"><a href="page2.html">Penny Fara</a></button>
+			<div class="box">
+				<p>
+					Then there is Clint JR, the man can charm just about anyone, a stockbroker located in New York who lines his wallet with a pack of lies, he will do just about anything to make a quick buck.
+				</p>
+			</div>
+			<button class="btn"><a href="page2.html">Clint Jr</a></button>
+			<div class="box">
+				<p>
+					Lastly, Ms Tough Kitty herself, an actress who turns many head as she walked with a temper to go along with it, rumour has it she set fire to the last man who broke her heart, its safe to she is not to be messed with in any way!
+				</p>
+			</div>
+			<button class="btn"><a href="page2.html">Tough Kitty</a></button>
+		</div>
+	</div>
+</html>

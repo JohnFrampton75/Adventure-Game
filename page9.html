@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="uft-8">
+		<title>AdventureGame</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<style type="text/css"></style>
+	</head>
+	<body>
+		<nav>
+			<label class="logo">MysteryMurder</label>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="howtoplay.html">How to play</a></li>
+				<li><a href="information.html">Information</a></li>
+			</ul>
+		</nav>
+	</body>
+	<div id="clock"></div>
+    <script type="text/javascript">
+        setInterval(displayclock, 500);
+        function displayclock () 
+		{
+            var time = new Date();
+            var hrs = time.getDate();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
+
+            if (hrs > 12) {
+                hrs = hrs - 12;
+            }
+
+            if (hrs == 0) {
+                hrs = 12;
+            }
+			if (hrs < 10) {
+                hrs = '0' + hrs;
+            }
+			if (min < 10) {
+                min = '0' + min;
+            }
+			if (sec < 10) {
+                sec = '0' + sec;
+            }
+
+
+            document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec;
+		}
+
+    </script>
+	<div class="banner-area3">
+		<div class="container">
+			<div class="box1">
+				<p> 
+					We know there was blood, we know the back door was forced open and the clues just keep adding up! Now this is the decider, the killer will strike again if you do not eleminate the killer at once!!!! Pick wisely, lets hear each of them explain why their innocent!
+				</p>
+			</div>
+			<div class="box">
+				<p> 
+					Mr Gold claims he was at the gun store during the murder, but when was that. Aparently he was there at 7pm but that doesnt add up becuase he was at Mr Bennett's for 8:30pm and the gun store is a 3 hpur drive away!
+				</p>
+			</div>
+				<button class="btn"><a href="congratulations.html">Mr Gold</a></button>
+			<div class="box">
+				<p>
+					PennyFara claims she was working on a story in a cafe near by, this adds up becuase she has coffee spilled on her shirt.
+				</p>
+			</div>
+			<button class="btn"><a href="fail.html">Penny Fara</a></button>
+			<div class="box">
+				<p>
+					Clint was in the office at the time, he says his boss can confirm this with a simple phone call. But his boss recently broke his phone so he can't get ahold of him .....
+				</p>
+			</div>
+			<button class="btn"><a href="fail.html">Clint Jr</a></button>
+			<div class="box">
+				<p>
+					Tough Kitty was getting her nails done, this is correct as her nails are bright red and very very very sharpe.
+				</p>
+			</div>
+			<button class="btn"><a href="fail.html">Tough Kitty</a></button>
+		</div>
+	</div>
+</html>

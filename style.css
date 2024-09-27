@@ -1,0 +1,222 @@
+* {
+
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: arial;
+	background-color: black;
+	margin: auto;
+	background-size: cover;
+	background-position: center;
+}
+
+nav {
+	background: rgb(158, 33, 33);
+	width: 100%;
+	height: 100px;
+}
+
+.banner-area {
+	padding: 268px 600px;
+	margin: auto;
+	background-image: url(images/homepage2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.banner-area1 {
+	padding: 290px 620px;
+	margin: auto;
+	background-image: url(images/howtoplay.jpg);
+	background-size: contain;
+	background-position: center;
+}
+
+.banner-area2 {
+	padding: 280px 620px;
+	margin: auto;
+	background-image: url(images/information.jpg);
+	background-size: contain;
+	background-position: center;
+}
+
+.contents-area {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contents-area1 {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contents-area2 {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.contents {
+	text-align: center;
+}
+
+.contents h1 {
+	font-size: 85;
+	color: rgb(211, 67, 67);
+}
+
+.contents p {
+	font-size: 35;
+	color: white
+}
+
+.contents1 {
+	text-align: center;
+}
+
+.contents1 h1 {
+	font-size: 85;
+	color: rgb(211, 73, 73);
+}
+
+.contents1 p {
+	font-size: 35;
+	color: white
+}
+
+.contents2 {
+
+	text-align: center;
+}
+
+.contents2 h1 {
+	font-size: 85;
+	color: rgb(211, 73, 73);
+}
+
+.contents2 p {
+	font-size: 35;
+	color: white
+}
+
+.contents .btn {
+	border:none;
+	outline:none;
+	padding: 15px;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-size: 20px;
+	cursor: pointer;
+	background: rgb(140, 141, 141);
+}
+.contents .btn a {
+	color:white
+}
+
+.btn {
+	border:none;
+	outline:none;
+	padding: 8px 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	background: rgb(140, 141, 141);
+}
+.btn a {
+	color:white
+}
+
+.btn a:hover {
+	background: rgb(109, 109, 109);
+	transition: .4s;
+	padding: 4px;
+}
+
+label.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+
+
+nav ul li {
+	font-weight: bold;
+	display: inline-block;
+	line-height: 90px;
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 18px;
+	padding: 8px 14px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+
+nav ul li a:hover {
+	color: rgb(134, 134, 134);	
+}
+
+ a.box,a:hover {
+	background: rgb(124, 22, 22);
+	transition: .4s;
+}
+
+.container {
+	width: 70%;
+	margin: 30px auto;
+	padding: 10px;
+}
+
+.container .box {
+	width: 100%;
+	padding: 30px;
+	background: rgb(212, 212, 212);
+	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px -3px  rgba(0, 0, 0, 0.1);
+	font-family: arial;
+	font-size: 18px;
+	border: 4px solid;
+	border-color: rgb(134, 134, 134);
+}
+
+.box1 {
+	width: 100%;
+	padding: 30px;
+	background: rgb(255, 183, 183);
+	margin-top: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px -3px  rgba(0, 0, 0, 0.1);
+	border: 8px solid;
+	border-color: rgb(158, 33, 33);
+	font-family: arial;
+	font-size: 18px;
+}
+
+#clock {
+	text-align: left;
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+}

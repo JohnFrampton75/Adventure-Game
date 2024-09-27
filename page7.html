@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="uft-8">
+		<title>AdventureGame</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<style type="text/css"></style>
+	</head>
+	<body>
+		<nav>
+			<label class="logo">MysteryMurder</label>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="howtoplay.html">How to play</a></li>
+				<li><a href="information.html">Information</a></li>
+			</ul>
+		</nav>
+	</body>
+	<div id="clock"></div>
+    <script type="text/javascript">
+        setInterval(displayclock, 500);
+        function displayclock () 
+		{
+            var time = new Date();
+            var hrs = time.getDate();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
+
+            if (hrs > 12) {
+                hrs = hrs - 12;
+            }
+
+            if (hrs == 0) {
+                hrs = 12;
+            }
+			if (hrs < 10) {
+                hrs = '0' + hrs;
+            }
+			if (min < 10) {
+                min = '0' + min;
+            }
+			if (sec < 10) {
+                sec = '0' + sec;
+            }
+
+
+            document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec;
+		}
+
+    </script>
+	<div class="banner-area3">
+		<div class="container">
+			<div class="box1">
+				<p> 
+					Time is of the essense, the killer might strike again! we know Mr Bennett was found in a pool of blood, meaning he was shot or stabbed. Have a look at your notes and see who stands out with these killer traits. Lets see why each charater didn't follow through on their revenge plan for Mr Bennett.
+				</p>
+			</div>
+			<div class="box">
+				<p> 
+					Everytime I went to his house he was always away visiting a different country, he was never in. I got bored of the chase and my desire to seek revenge melted away slowly.
+				</p>
+			</div>
+				<button class="btn"><a href="page8.html">Mr Gold</a></button>
+			<div class="box">
+				<p>
+					It would ruin my career and not his, I wouldn't waste my full lifes work on some shmuck. It would be stupid of me to write false information and publish it in my own name. 
+				</p>
+			</div>
+			<button class="btn"><a href="fail.html">Penny Fara</a></button>
+			<div class="box">
+				<p>
+					I have a reputation to uphold, if I lost one of my clients millions of dollars in one night I would be like the plague. No one would come near me ever again, career suicide.
+				</p>
+			</div>
+			<button class="btn"><a href="fail.html">Clint Jr</a></button>
+			<div class="box">
+				<p>
+					I don't have the time to spend on someone so worthless, I will simply just get a new man in my life. why spend all my time and effort on someone who doesn't evene deserve it even though it would ne nice to burn his house down. Then again, I could just stab him ....
+				</p>
+			</div>
+			<button class="btn"><a href="page8.html">Tough Kitty</a></button>
+		</div>
+	</div>
+</html>

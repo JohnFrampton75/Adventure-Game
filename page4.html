@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="uft-8">
+		<title>AdventureGame</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<nav>
+			<label class="logo">MysteryMurder</label>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="howtoplay.html">How to play</a></li>
+				<li><a href="information.html">Information</a></li>
+				<style type="text/css"></style>
+			</ul>
+		</nav>
+	</body>
+	<div id="clock"></div>
+    <script type="text/javascript">
+        setInterval(displayclock, 500);
+        function displayclock () 
+		{
+            var time = new Date();
+            var hrs = time.getDate();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
+
+            if (hrs > 12) {
+                hrs = hrs - 12;
+            }
+
+            if (hrs == 0) {
+                hrs = 12;
+            }
+			if (hrs < 10) {
+                hrs = '0' + hrs;
+            }
+			if (min < 10) {
+                min = '0' + min;
+            }
+			if (sec < 10) {
+                sec = '0' + sec;
+            }
+
+
+            document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec;
+		}
+
+    </script>
+	<div class="banner-area3">
+		<div class="container">
+			<div class="box1">
+				<p> 
+					Now this is where is gets important, if you select the wrong answer, you will be taking back to the start and must redo the full thing, everything after this point will impact the outcome. If you select wrong, you will be punished for it. Now let’s dive into each characters history and if their anything suspicious about it.
+				</p>
+			</div>
+			<div class="box">
+				<p> 
+					Mr Gold in his wild times has had multiple shootouts but somehow a bullet has never pierced him, I wonder if he has got any secrets for that or is it just a bulletproof vest. Let’s just say he’s not shy to get his gun out during an argument!
+				</p>
+			</div>
+				<button class="btn"><a href="page5.html">Mr Gold</a></button>
+			<div class="box">
+				<p>
+					Rumour has it that PennyFara went on a business trip to report on a topic top secret and halfway through her investigation another reporter who worked close to her mysteriously died from poison.
+				</p>
+			</div>
+			<button class="btn"><a href="page5.html">Penny Fara</a></button>
+			<div class="box">
+				<p>
+					According to eyewitnesses, Clint Jr got into an altercation with another stock broker and one then lead to another, let’s just say a was chocked to death in a strange manner.
+				</p>
+			</div>
+			<button class="btn"><a href="page5.html">Clint Jr</a></button>
+			<div class="box">
+				<p>
+					ToughKitty on the other hand has been accused of stabbing her ex with a gold pen when she found out he was another girlfriend, I wonder where she got that told pen?
+				</p>
+			</div>
+			<button class="btn"><a href="page5.html">Tough Kitty</a></button>
+		</div>
+	</div>
+</html>

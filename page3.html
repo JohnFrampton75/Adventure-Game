@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="uft-8">
+		<title>AdventureGame</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<nav>
+			<label class="logo">MysteryMurder</label>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="howtoplay.html">How to play</a></li>
+				<li><a href="information.html">Information</a></li>
+				<style type="text/css"></style>
+			</ul>
+		</nav>
+	</body>
+	<div id="clock"></div>
+    <script type="text/javascript">
+        setInterval(displayclock, 500);
+        function displayclock () 
+		{
+            var time = new Date();
+            var hrs = time.getDate();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
+
+            if (hrs > 12) {
+                hrs = hrs - 12;
+            }
+
+            if (hrs == 0) {
+                hrs = 12;
+            }
+			if (hrs < 10) {
+                hrs = '0' + hrs;
+            }
+			if (min < 10) {
+                min = '0' + min;
+            }
+			if (sec < 10) {
+                sec = '0' + sec;
+            }
+
+
+            document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec;
+		}
+
+    </script>
+	<div class="banner-area3">
+		<div class="container">
+			<div class="box1">
+				<p> 
+					Now comes the elephant in the room to see when each individual was last seen with Mr Bennet before he unfortunately met his end, closely analyse each story and take notes to see whether their last encounter was good or bad enough to kill a man.
+				</p>
+			</div>
+			<div class="box">
+				<p> 
+					Mr Gold claims the last time him and Mr Bennet sat down to talk it was friendly but the neighbours heard both of them yelling and Mr Gold was caught making threats to Mr Bennett about leaving a gold bullet somewhere in his head.
+				</p>
+				</div>
+				<button class="btn"><a href="page4.html">Mr Gold</a></button>
+			<div class="box">
+				<p>
+					PenyFara was caught snooping around Mr Bennets house looking for clues on how he made his millions, as stated Mr Bennett was extremely angry and both of them had a huge argument. Mr Bennet threatened to call the police and get her fired!
+				</p>
+			</div>
+			<button class="btn"><a href="page4.html">Penny Fara</a></button>
+			<div class="box">
+				<p>
+					Clint Jr got into an altercation with Mr Bennet over a lumpsum of money that disappeared mysteriously, Mr Bennett accused Clint Jr of stealing it. 
+				</p>
+			</div>
+			<button class="btn"><a href="page4.html">Clint Jr</a></button>
+			<div class="box">
+				<p>
+					Toughkitty went to see Mr Bennet to confront him about his cheating scandals, she soon found out she was not the only one and Mr Bennett would soon find a new secret lover
+				</p>
+			</div>
+			<button class="btn"><a href="page4.html">Tough Kitty</a></button>
+		</div>
+	</div>
+</html>
